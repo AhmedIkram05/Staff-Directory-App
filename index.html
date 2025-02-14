@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Staff Directory - Browse our team members">
+    <title>Staff Directory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar bg-primary shadow-sm mb-4">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 text-white">Staff Directory</span>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="search-container mb-4">
+            <div class="search-wrapper">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" 
+                       id="searchInput" 
+                       class="form-control" 
+                       placeholder="Search by name..."
+                       aria-label="Search staff members">
+            </div>
+        </div>
+        
+        <div id="staffList" class="row g-4"></div>
+        
+        <nav class="pagination-container mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <button id="prevPage" class="page-link" disabled>Previous</button>
+                </li>
+                <li class="page-item">
+                    <span class="page-link">
+                        Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+                    </span>
+                </li>
+                <li class="page-item">
+                    <button id="nextPage" class="page-link">Next</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="mt-5 py-3 text-center text-muted">
+        <small>&copy; 2024 Staff Directory. All rights reserved.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
